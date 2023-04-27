@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Alias 설정 -->
+<typeAliases>
+	<typeAlias type="com.example.arammy.vo.UserVo" alias="user"></typeAlias>
+	<typeAlias type="com.example.arammy.vo.BoardVo" alias="board"></typeAlias>
+</typeAliases>

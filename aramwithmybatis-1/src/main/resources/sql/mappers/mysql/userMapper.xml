@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.arammy.mapper.UserMapper">
+<!-- 	<select id="MemberInfo" resultType="user" parameterType="int">
+		SELECT NUM 			AS num
+			  ,ID 			AS id
+			  ,PASSWORD 	AS password
+			  ,NAME 		AS name
+			  ,EMAIL 		AS email
+		FROM user
+		
+			   
+	</select>
+	<select id="login" resultType="UesrVo">
+		SELECT ID 			AS id
+			  ,PASSWORD 	AS password
+		FROM user
+	</select> -->
+</mapper>
