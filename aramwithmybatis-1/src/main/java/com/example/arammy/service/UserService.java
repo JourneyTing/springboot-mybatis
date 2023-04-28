@@ -1,5 +1,9 @@
 package com.example.arammy.service;
 
-public class UserService {
+import org.springframework.stereotype.Service;
 
+import com.example.arammy.vo.UserVo;
+
+public interface UserService {
+	public Integer login(UserVo user);
 }

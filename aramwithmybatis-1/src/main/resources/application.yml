@@ -8,6 +8,10 @@ server:
       force: true
     
 spring:
+  devtools: 
+    livereload:
+      enabled: true
+      
   mvc:
     view:
       prefix: /WEB-INF/views/
@@ -15,7 +19,7 @@ spring:
       
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/arammybatis?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://localhost:3306/arammybatis?autoReconnect=true
     username: JYJ
     password: 135792468Wh
     
@@ -32,4 +36,7 @@ mybatis:
     default-fetch-size: 500
   mapper-locations: 
   - classpath:sql/mappers/mysql/*.xml
+
+
+
 

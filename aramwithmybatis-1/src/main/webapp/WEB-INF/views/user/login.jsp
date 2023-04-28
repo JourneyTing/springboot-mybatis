@@ -1,13 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<script src="https://kit.fontawesome.com/5932be681f.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5932be681f.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 <title>아람</title>
 <style>
 	html, body {
@@ -67,6 +72,7 @@
 		margin-left:10px;
 	}
 </style>
+<script src="/js/user.js"></script>
 </head>
 <body>
 	<div class="login-all">
@@ -75,13 +81,13 @@
 		<div class="login-input">
 			<div class="login">
 				<form>
-					아이디 : <input type="text" id="id" class="id" ><br>
+					아이디 : <input type="text" id="id" class="id"><br>
 					비밀번호 : <input type="password" id="password">
-					<div class="button-section">
-						<button type="button" >회원가입</button>
-						<button onclick="" class="btn-login">로그인</button>
-					</div>
 				</form>
+				<div class="button-section">
+					<button onclick="location.href='/join'">회원가입</button>
+					<button class="btn-login" id="btn-login" >로그인</button>
+				</div>
 			</div>
 		</div>
 	</div>
