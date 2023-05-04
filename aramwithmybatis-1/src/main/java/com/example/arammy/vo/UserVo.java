@@ -15,4 +15,6 @@ public class UserVo {
 	private Date updateDate;
 	private Date cretaeDate;
 	private int loginFlag;
+	
+	private int result;
 }

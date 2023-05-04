@@ -80,7 +80,7 @@
 	<div class="login-title">로그인</div>
 		<div class="login-input">
 			<div class="login">
-				<form>
+				<form action="/api/user/login">
 					아이디 : <input type="text" id="id" class="id"><br>
 					비밀번호 : <input type="password" id="password">
 				</form>

@@ -8,9 +8,10 @@ import org.springframework.stereotype.Repository;
 import com.example.arammy.vo.UserVo;
 
 @Mapper
-@Repository
 public interface UserMapper {
-//	List<UserVo> login();
+	public UserVo checkUserId(String id) throws Exception;
+	public UserVo checkUserPassword(UserVo user) throws Exception ;
 	
-	public Integer login(UserVo id);
+	
+	public UserVo selectUser(UserVo userVo);
 }
