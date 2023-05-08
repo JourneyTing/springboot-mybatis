@@ -41,10 +41,5 @@ public class UserController {
 		return result;
 	}
 
-	@GetMapping("/")
-//	@GetMapping("/main")
-	public String main() throws Exception {
-		return "index";
-	}
 	
 }

@@ -6,7 +6,7 @@ server:
       charset: UTF-8
       enabled: true
       force: true
-    
+      
 spring:
   devtools: 
     livereload:
@@ -36,6 +36,8 @@ mybatis:
     default-fetch-size: 500
   mapper-locations: 
   - classpath*:static/sql/mappers/mysql/*.xml
+
+
 
 
 
