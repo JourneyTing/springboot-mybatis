@@ -2,19 +2,14 @@ package com.example.arammy.service;
 
 import java.util.ArrayList;
 
+import com.example.arammy.vo.ArticlePage;
 import com.example.arammy.vo.BoardVo;
-import com.example.arammy.vo.PagingVo;
+import com.example.arammy.vo.Criteria;
 
 public interface BoardService {
-	public ArrayList<BoardVo> boardList ();
+	public ArrayList<BoardVo> boardList (int pageNum);
 	
-	public void register(BoardVo baordVo);
+	public int boardListCnt();
 	
-	public BoardVo get(int boardId);
-	
-	public boolean modify(BoardVo boardVo);
-	
-	public boolean remove (int boardId);
-	
-	public ArrayList<BoardVo> boardList(PagingVo pagingVo);
+	public ArrayList<BoardVo> boardList(ArticlePage articlePage);
 }
