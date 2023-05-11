@@ -8,24 +8,22 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.example.arammy.service.BoardService;
+import com.example.arammy.service.BoardService1;
 import com.example.arammy.vo.ArticlePage;
-import com.example.arammy.vo.BoardVo;
-import com.example.arammy.vo.Criteria;
+import com.example.arammy.vo.BoardVo1;
+import com.example.arammy.vo.Criteria1;
 
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
 @Controller
-@RequestMapping(value = "/")
-public class BoardController {
+public class BoardController1 {
 	
 	@Autowired
-	private BoardService boardService;
+	private BoardService1 boardService;
 	
-	@RequestMapping({"/","main"})
 	public String list(Model model, @RequestParam(defaultValue="1") int pageNum) {
-		List<BoardVo> list = boardService.boardList(pageNum);
+		List<BoardVo1> list = boardService.boardList(pageNum);
 		log.info("list : " + list);
 		log.info("list.size() : " + list.size());
 
@@ -44,9 +42,8 @@ public class BoardController {
 	}
 	
 	/* 페이징에 따라 다시 검색 및 페이지 리스트 구현 해주는 controller 구현부  */
-	@RequestMapping("/user/board")
 	public String boardListPaging(Model model, @RequestParam(defaultValue="1") int pageNum) {
-		List<BoardVo> list = boardService.boardList(pageNum);
+		List<BoardVo1> list = boardService.boardList(pageNum);
 		log.info("list.size() : " + list.size());
 	
 		int total = boardService.boardListCnt();

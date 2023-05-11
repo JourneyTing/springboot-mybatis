@@ -35,7 +35,7 @@ mybatis:
     jdbc-type-for-null: varchar
     default-fetch-size: 500
   mapper-locations: 
-  - classpath*:static/sql/mappers/mysql/*.xml
+  - classpath*:mappers/*.xml
 
 
 

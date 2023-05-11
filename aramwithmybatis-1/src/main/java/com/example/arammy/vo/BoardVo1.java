@@ -9,7 +9,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class BoardVo {
+public class BoardVo1 {
 	private int rownum;
 	private int boardId;
 	private String title;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
 
-import com.example.arammy.vo.BoardVo;
+import com.example.arammy.vo.BoardVo1;
 
 //@SpringBootTest
 class Aramwithmybatis1ApplicationTests {
