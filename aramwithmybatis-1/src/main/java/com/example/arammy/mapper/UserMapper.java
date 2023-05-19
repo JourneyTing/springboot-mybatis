@@ -12,6 +12,9 @@ public interface UserMapper {
 	public UserVo checkUserId(String id) throws Exception;
 	public UserVo checkUserPassword(UserVo user) throws Exception ;
 	
+	public UserVo selectUser(String id) throws Exception;
 	
-	public UserVo selectUser(UserVo userVo);
+	public UserVo checkUserName(String name) throws Exception;
+	
+	public int saveInfo(UserVo userVo) throws Exception;
 }

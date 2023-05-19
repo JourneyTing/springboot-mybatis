@@ -28,7 +28,7 @@
 	 	background: #bbbbb9;
 	}
 	.login-section {
-		    width: 100%;
+		width: 100%;
 	}
 	.login-title {
 		font-size: 50px;
@@ -49,9 +49,15 @@
 		height: 110px;
    		font-size: 25px;
 	    font-weight: 600;
+	    width: 80%;
+    	text-align: center;
 	}
 	input {
 		height: 30px;
+		margin-bottom: 10px;
+		font-family: 'Gugi', cursive; 
+		background: lightgray;
+		width: 180px;
 	}
 	.id {
 	    margin: 10px 18px;
@@ -59,7 +65,7 @@
 	.button-section {
 		display: flex;
 		justify-content: end;
-		margin-top: 10px;
+		margin-top: 40px;
 	}
 	button {
 	    padding: 10px 18px;
@@ -72,7 +78,7 @@
 		margin-left:10px;
 	}
 </style>
-<script src="/js/user.js"></script>
+<%@ include file="../common.jsp" %>
 </head>
 <body>
 	<div class="login-all">
@@ -81,7 +87,7 @@
 		<div class="login-input">
 			<div class="login">
 				<form action="/api/user/login">
-					아이디 : <input type="text" id="id" class="id"><br>
+					&nbsp; 아이디 : <input type="text" id="id" class="id"><br>
 					비밀번호 : <input type="password" id="password">
 				</form>
 				<div class="button-section">

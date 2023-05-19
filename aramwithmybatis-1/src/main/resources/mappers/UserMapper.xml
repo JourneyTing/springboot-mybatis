@@ -7,8 +7,8 @@
 			   ,PASSWORD
 			   ,NAME
 			   ,EMAIL
-			   ,UPDATEDATE
-			   ,CREATEDATE
+			   ,UPDATE_DATE
+			   ,CREATE_DATE
 		FROM USER
 		WHERE ID = #{id}	
 	</select>
@@ -23,4 +23,15 @@
 		WHERE ID = #{id}
 		AND PASSWORD = #{password}
 	</select>
+	
+	<select id="checkUserName" parameterType="String" resultType="com.example.arammy.vo.UserVo">
+		SELECT COUNT(*) AS result
+		FROM USER
+		WHERE NAME = #{name}	
+	</select>
+	
+	<insert id="saveInfo" parameterType="com.example.arammy.vo.UserVo">
+		INSERT INTO USER
+		VALUES (#{id}, #{password}, #{name}, #{email}, NOW(),null)
+	</insert>
 </mapper>

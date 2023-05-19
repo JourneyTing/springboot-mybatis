@@ -8,9 +8,12 @@ server:
       force: true
       
 spring:
+  profiles:
+    active: local
   devtools: 
     livereload:
       enabled: true
+      
       
   mvc:
     view:
@@ -18,14 +21,10 @@ spring:
       suffix: .jsp
       
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/arammybatis?autoReconnect=true
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:mysql://localhost:3306/arammybatis?autoReconnect=true
     username: JYJ
     password: 135792468Wh
-    
-  jackson:
-    serialization:
-      fail-on-empty-beans: false
  
 mybatis:
   configuration:
@@ -36,9 +35,5 @@ mybatis:
     default-fetch-size: 500
   mapper-locations: 
   - classpath*:mappers/*.xml
-
-
-
-
 
 
